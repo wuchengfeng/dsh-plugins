@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "429 rate-limit retry",
+    "description": "Recovers from transient HTTP 429 rate-limit failures on model requests and retries them with a robust backoff, including 429s whose response body is misread as an exhausted quota."
+  }
+}

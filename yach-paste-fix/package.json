@@ -1,0 +1,35 @@
+{
+  "name": "@local/paste-image-compat",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Repairs clipboard images (TIFF, WebP, undeclared type) into PNG so the composer accepts a paste",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./lib/*.js": "./lib/*.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "README.md",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": false,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}

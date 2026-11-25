@@ -1,0 +1,3 @@
+- insert:
+    - id: paste-image-compat
+      name: '@local/paste-image-compat'

@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Clipboard image repair",
+    "description": "Pasted clipboard images that arrive as TIFF, as WebP the attachment service does not accept, or with no declared format are converted to PNG, so screenshots from other apps reach the composer instead of a format error or a picture the model never sees.",
+    "detail": "README.md"
+  }
+}
